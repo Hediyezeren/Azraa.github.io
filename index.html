@@ -2,53 +2,76 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Azra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azra | Kişisel Sayfa</title>
 
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff5eb; /* Çok açık turuncu tonlu arka plan */
             color: #333;
         }
 
         header {
             text-align: center;
-            padding: 60px 20px;
+            padding: 50px 20px;
             background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            /* Azra turuncu sevdiği için alt çizgi turuncu oldu */
+            border-bottom: 4px solid #ff9f43; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+            font-size: 40px;
+            margin: 0 0 10px 0;
+            color: #d35400; /* Başlık koyu turuncu */
         }
 
         .sub {
-            font-size: 19px;
+            font-size: 18px;
             color: #666;
+            font-style: italic;
         }
 
         .card {
-            max-width: 700px;
+            max-width: 650px;
             background: #fff;
-            margin: 40px auto;
+            margin: 30px auto;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.08);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 3px solid #ff9f43; /* Kartın tepesine turuncu çizgi */
+        }
+        
+        /* Mobilde kenarlardan taşmaması için */
+        @media (max-width: 700px) {
+            .card {
+                margin: 20px;
+            }
         }
 
         p {
             font-size: 18px;
             line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .honda-vurgu {
+            background-color: #fff0e6;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: #d35400;
+            font-weight: bold;
         }
 
         .footer {
             text-align: center;
             padding: 20px;
-            color: #777;
-            font-size: 15px;
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -56,16 +79,21 @@
 
 <header>
     <h1>Azra</h1>
-    <div class="sub">Kişisel Web Sayfam</div>
+    <div class="sub">Ziraat Mühendisliği Öğrencisi 🌾</div>
 </header>
 
 <div class="card">
-    <p><strong>Merhaba ben Azra.</strong>  20 yaşındayım Zeren‘i çok seviyorum hayatımın anlamı ziraat mühendisliği okuyorum.</p>
+    <p><strong>Merhaba ben Azra.</strong><br> 
+    20 yaşındayım. Zeren‘i çok seviyorum, hayatımın anlamı. Ziraat mühendisliği okuyorum.</p>
 
-    <p> kahve içmeyi çok severim en sevdiğim renk turuncu Hondacıyım her kasasına bayılıyorum kova burcuyum yükselenim aslan <strong>En sevdiğim huyum asla ikna olmam herkesle inatlaşırım bir şekilde kazanırım😅😅 </strong>.  
-   Ayrıca çok nazik, aurası yüksek, güzel bir kızı.</p>
+    <p>Kahve içmeyi çok severim, en sevdiğim renk turuncu. 
+    <span class="honda-vurgu">Hondacıyım</span>, her kasasına bayılıyorum! 🚗💨<br>
+    Kova burcuyum, yükselenim Aslan.</p>
 
-<div class="footer">
+    <p>En sevdiğim huyum; <strong>asla ikna olmam, herkesle inatlaşırım ama bir şekilde kazanırım. 😅😅</strong></p>
+    
+    <p><i>(Ayrıca çok nazik, aurası yüksek, güzel bir kızım.)</i></p>
+</div> <div class="footer">
     © 2025 • Azra
 </div>
 
